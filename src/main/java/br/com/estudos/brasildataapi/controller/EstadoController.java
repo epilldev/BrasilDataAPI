@@ -6,7 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+/**
+ * Controller REST responsável por expor as operações relacionadas a estados.
+ *
+ * Delega a execução das regras de negócio ao EstadoService.
+ */
 @RestController
 public class EstadoController {
 

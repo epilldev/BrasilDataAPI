@@ -1,0 +1,28 @@
+/*
+ * Contrato gRPC para operações relacionadas a estados.
+ *
+ * Define os serviços, operações e estruturas de dados utilizados
+ * na comunicação entre clientes e o servidor gRPC.
+ */
+syntax = "proto3";
+
+package brasildata;
+
+option java_multiple_files = true;
+option java_package = "br.com.estudos.brasildataapi.grpc";
+
+service EstadoService {
+  rpc GetEstados (GetEstadosRequest) returns (GetEstadosResponse);
+}
+
+message GetEstadosRequest {
+}
+
+message GetEstadosResponse {
+  repeated Estado estados = 1;
+}
+
+message Estado {
+  string sigla = 1;
+  string nome = 2;
+}

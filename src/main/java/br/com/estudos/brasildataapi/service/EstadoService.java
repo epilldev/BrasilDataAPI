@@ -5,7 +5,11 @@ import br.com.estudos.brasildataapi.dto.EstadoResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * Serviço responsável pelas regras de negócio relacionadas a estados.
+ *
+ * Centraliza a lógica compartilhada pelas interfaces REST e gRPC.
+ */
 @Service
 public class EstadoService {
 

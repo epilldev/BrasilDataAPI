@@ -8,7 +8,11 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 
 import java.util.List;
-
+/**
+ * Client responsável pela comunicação com a API pública do IBGE.
+ *
+ * Isola os detalhes da integração externa da camada de negócio.
+ */
 @Component
 public class IbgeClient {
 
